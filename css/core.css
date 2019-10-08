@@ -1,0 +1,183 @@
+/* SYSTEM COLORS */
+/* PINK AS LOGO #9f81f8  */
+/* BLUE AS PRIMARY COLOR #337ab7 */
+/* override main css  */
+.header-nav .header-nav-wrapper.scroll-to-fixed-fixed.scroll-to-fixed-fixed {
+    border-bottom: 1px solid transparent !important;
+  }
+  .tab-slider .nav.nav-pills a:hover, .tab-slider .nav.nav-pills a.active, 
+  .custom-nav-tabs > li > a:hover, .widget .tags a:hover, .progress-item .progress-bar, 
+  .small-title .title::after, .title-icon::before, .title-icon::after, .testimonial .item::after, 
+  .drop-caps.colored-square p:first-child:first-letter, .drop-caps.colored-rounded p:first-child:first-letter,
+   .list-icon.theme-colored.square li i, .list-icon.theme-colored.rounded li i, 
+   .working-process.theme-colored a, .widget.dark .tags a:hover, .blog-posts .post .entry-content .post-date.right,
+    .horizontal-tab-centered .nav-pills > li > a:hover, .horizontal-tab-centered .nav-pills > li.active > a,
+     .horizontal-tab-centered .nav-pills > li.active > a:hover, .horizontal-tab-centered .nav-pills > li.active > a:focus,
+      .owl-theme.dot-theme-colored .owl-controls .owl-dot span, .pagination.theme-colored li.active a, 
+      .section-title .both-side-line::after, .section-title .both-side-line::before, .section-title .top-side-line::after,
+       .section-title .left-side-line::before, .section-title .right-side-line::before, .product .tag-sale, 
+       .testimonial.style1 .comment, .owl-theme .owl-dots .owl-dot.active span, .title-icon::after, .title-icon::before,
+        .line-bottom:after, .line-bottom:before, .line-bottom:after, .line-bottom-no-border:after, .line-bottom-center:after,
+         .line-bottom-center:before, .title-dots span, .home-countdown > li{
+             background: #337ab7 !important
+
+  }
+  .icon-theme-colored.icon-dark a{
+      background-color: #337ab7 !important;
+
+  }
+/* override main css  end*/
+
+/* SYSTEM SCROLLER */
+::-webkit-scrollbar {
+    width: 13px !important;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #337ab7 !important; 
+    border-radius: 10px !important;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0,.71) !important; 
+    border-radius: 10px !important;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0,.61) !important;
+}
+/* END SYSTEM SCROLLER */
+
+/* custom css begign here */
+.btn-rounded{
+    border-radius: 20px;
+}
+.btn-border-primary{
+    border-color: #337ab7 !important;
+    color: #337ab7 !important;
+}
+section#about .container{
+    background-color:white;
+}
+.team-info-div{
+    background-color: #337ab7;
+    border-radius: 3px;
+    padding: 5px 10px 5px;
+}
+button.btn_lang{
+    color: #337ab7;
+    background-color: white;
+    border-radius: 20px;
+    padding:3px 20px;
+    border: #337ab7 solid 1px;
+}
+button.btn_lang.active{
+    background-color: #337ab7;
+    color:white
+
+}
+.bg-primary-transparent{
+    background-color: rgba(51,122,183,.86)
+}
+.tp-bgimg{
+    background-position: initial !important;;
+}
+.tp-bgimg:hover{
+    filter: blur(1px)
+}
+.bland_logos img{
+    width: 100px
+}
+/* MEDIA QUERIES */
+@media (min-width: 765px){
+    section#home{
+        margin-top: -80px;
+    }
+    section#about .container{
+        border-radius: 20px;
+        margin-top: -100px;
+    
+    }
+}
+@media (min-width: 1025px){
+
+}
+
+@media(max-width:700px){
+    .bland_title_main{
+        font-size:15px !important
+    }
+    .bland_title_sub{
+        font-size:10px
+    }
+    .bland_logos img{
+        max-width: 50px !important;
+        margin: 20px 0;
+    }
+}
+
+
+/* ----------------------------------------------------------------PINK as LOGO---------------------------------------------------- */
+/* 
+.tab-slider .nav.nav-pills a:hover, .tab-slider .nav.nav-pills a.active, 
+.custom-nav-tabs > li > a:hover, .widget .tags a:hover, .progress-item .progress-bar, 
+.small-title .title::after, .title-icon::before, .title-icon::after, .testimonial .item::after, 
+.drop-caps.colored-square p:first-child:first-letter, .drop-caps.colored-rounded p:first-child:first-letter,
+ .list-icon.theme-colored.square li i, .list-icon.theme-colored.rounded li i, 
+ .working-process.theme-colored a, .widget.dark .tags a:hover, .blog-posts .post .entry-content .post-date.right,
+  .horizontal-tab-centered .nav-pills > li > a:hover, .horizontal-tab-centered .nav-pills > li.active > a,
+   .horizontal-tab-centered .nav-pills > li.active > a:hover, .horizontal-tab-centered .nav-pills > li.active > a:focus,
+    .owl-theme.dot-theme-colored .owl-controls .owl-dot span, .pagination.theme-colored li.active a, 
+    .section-title .both-side-line::after, .section-title .both-side-line::before, .section-title .top-side-line::after,
+     .section-title .left-side-line::before, .section-title .right-side-line::before, .product .tag-sale, 
+     .testimonial.style1 .comment, .owl-theme .owl-dots .owl-dot.active span, .title-icon::after, .title-icon::before,
+      .line-bottom:after, .line-bottom:before, .line-bottom:after, .line-bottom-no-border:after, .line-bottom-center:after,
+       .line-bottom-center:before, .title-dots span, .home-countdown > li{
+           background: #9f81f8 !important
+}
+.text-primary{
+    color: #9f81f8 !important
+}
+.bg-primary{
+    background-color: #9f81f8 !important
+}
+.icon-theme-colored.icon-dark a{
+    background-color: #9f81f8 !important;
+
+} */
+
+/* override main css  end*/
+
+/* SYSTEM SCROLLER */
+/* 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #9f81f8 !important; 
+} */
+
+/* END SYSTEM SCROLLER */
+/* custom css begign here */
+/* .btn-border-primary{
+  border-color: #9f81f8 !important;
+  color: #9f81f8 !important;
+}
+section#about .container{
+  background-color:white;
+}
+.team-info-div{
+  background-color: #9f81f8;
+}
+button.btn_lang{
+  color: #9f81f8;
+  border: #9f81f8 solid 1px;
+}
+button.btn_lang.active{
+  background-color: #9f81f8;
+
+}
+
+.bg-primary-transparent{
+    background-color: rgba(159, 129, 248,.86)
+} 
+*/
