@@ -3,7 +3,7 @@ var data = [
         contact_us: 'Contact US',
         system_title: 'MEN IN CHRIST',
         bland_title: 'MEN IN CHRIST',
-        about_us_title: 'WHO “MEN IN CHRIST” ARE..?',
+        about_us_title: 'Who “Men in Christ” Are..?',
         about_us_paragraph: `This is a group of male members of the church aged from 18 (eighteen) years and above, 
                             two years lower than the limit underlined by the Man of God – Moses in his fourth Book in the Bible
                             (Numbers 1:2-4; “Take ye the sum of all the congregation of the children of Israel, after their polls; 
@@ -84,7 +84,7 @@ var data = [
         contact_us: 'Wasiliana Nasi',
         system_title: 'WANAUME KATIKA KRISTO',
         bland_title: 'WANAUME KATIKA KRISTO',
-        about_us_title: `“WANAUME KATIKA KRISTO” NI NANI?`,
+        about_us_title: `“Wanaume katika Kristo” Ni Nani?`,
         about_us_paragraph: `Hiki ni kikundi cha wanaume waumini wa kanisa wenye umri wa miaka 18 (kumi na nane) 
                                 na zaidi, miaka miwili chini kuliko kikomo kilichoainishwa na Mtu wa Mungu - Musa katika Kitabu chake 
                                 cha Biblia (Hesabu 1: 2-4; "Fanyeni hesabu ya Mkutano wote wa wana wa Israeli , kwa kuandama jamaa zao, 
@@ -209,12 +209,13 @@ change_lang = lang => {
         $('.dep_treasure_title').html(eng_data.dep_treasure_title);
         $('.grup_cons_title').html(eng_data.grup_cons_title);
         $('.section_achieve_title').html(eng_data.section_achieve_title);
-        eng_data.section_achieve_paragraph.map(item => {
+        eng_data.section_achieve_paragraph.map((item,index) => {
             container_achieve_paragraph.push(`     
             <div class="item">
             <div class="testimonial-wrapper text-center">
               <div class="content pt-10">
                 <p class="font-16 text-white ">
+                <span style="font-weight:600; font-size:20px">`+ (index+1) +`:</span>
                   <em>
                   `+ item + `
                   </em>
@@ -288,12 +289,13 @@ change_lang = lang => {
         $('.dep_treasure_title').html(eng_data.dep_treasure_title);
         $('.grup_cons_title').html(eng_data.grup_cons_title);
         $('.section_achieve_title').html(eng_data.section_achieve_title);
-        eng_data.section_achieve_paragraph.map(item => {
+        eng_data.section_achieve_paragraph.map((item,index) => {
             container_achieve_paragraph.push(`     
                 <div class="item">
                 <div class="testimonial-wrapper text-center">
                   <div class="content pt-10">
                     <p class="font-16 text-white ">
+                    <span style="font-weight:600; font-size:20px">`+ (index+1) +`:</span>
                       <em>
                       `+ item + `
                       </em>
