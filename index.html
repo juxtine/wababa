@@ -21,8 +21,7 @@
   <meta name="author" content="Effort_&_Justine__Mlimbila" />
   <meta name="theme-color" content="#337ab7">
   <!-- Page Title -->
-  <title>
-    MEN IN CHRIST
+  <title id="system_title">
   </title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <!-- Favicon and Touch Icons -->
@@ -70,6 +69,8 @@
   <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
   <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
 
+  <!-- JS my script to pull data -->
+  <script src="js/pull_data.js"></script>
 </head>
 
 <body class="">
@@ -92,14 +93,14 @@
               <div class="widget no-border m-0">
                 <ul class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center">
                   <li>
-                    <button class="btn_lang active btn-sm">
+                    <button class="btn_lang active btn-sm" onclick="change_lang(0)">
                       <img src="images/eng.svg" alt="English" style="width: 20px">
                       &nbsp;
                       English
                     </button>
                   </li>
                   <li>
-                    <button class="btn_lang btn-sm">
+                    <button class="btn_lang btn-sm" onclick="change_lang(1)">
                       <img src="images/kis.svg" alt="Kiswahili" style="width: 20px">
                       &nbsp;
                       Kiswahili
@@ -117,13 +118,11 @@
               <!--  -->
               <div class="row">
                 <div class="col-xs-2 bland_logos">
-                  <a class=" pull-left flip " href="index.html"><img src="images/logo1.png" alt="Logo_ya_Dayosisi"
-                      ></a>
+                  <a class=" pull-left flip " href="index.html"><img src="images/logo1.png" alt="Logo_ya_Dayosisi"></a>
                 </div>
                 <div class="col-xs-8">
                   <h3 class="text-center text-white bland_title_main" style="font-family:'SamsungSharpSans-Bold'">
                     <span class="bland_title">
-                      WANAUME KATIKA KRISTO
                     </span>
                     KKKT-DMP KITUNDA RELINI
                   </h3>
@@ -132,8 +131,8 @@
                   </h5>
                 </div>
                 <div class="col-xs-2 bland_logos">
-                  <a class=" pull-right flip " href="index.html"><img src="images/logo.png" alt="Logo_ya_men_in_christ"
-                      ></a>
+                  <a class=" pull-right flip " href="index.html"><img src="images/logo.png"
+                      alt="Logo_ya_men_in_christ"></a>
                 </div>
               </div>
             </nav>
@@ -150,26 +149,26 @@
         <div class="container-fluid p-0">
 
           <!-- Slider Revolution Start -->
-          <div class="rev_slider_wrapper" >
+          <div class="rev_slider_wrapper">
             <div class="rev_slider rev_slider_default" data-version="5.0">
-              <ul >
+              <ul>
 
                 <!-- SLIDE 1 -->
                 <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic3.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 2"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic3.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-1-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['60','-50','-50']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-1-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['60','-50','-50']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -179,10 +178,11 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-1-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['135','35','40']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-1-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['135','35','40']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -211,18 +211,18 @@
                 <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic2.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 1"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic2.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-2-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['60','-50','-50']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-2-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['60','-50','-50']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -232,17 +232,19 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-2-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['135','35','40']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-2-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['135','35','40']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1400" data-splitin="none"
                     data-splitout="none" data-responsive_offset="on"
                     style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; border-radius: 3px">
-                    Kwaya ya Umoja wa Wanaume ya KKKT Usharika wa Kitunda <br> Relini wakiimba siku ya uzinduzi wa kwaya hiyo <br> tarehe 9/9/2018
+                    Kwaya ya Umoja wa Wanaume ya KKKT Usharika wa Kitunda <br> Relini wakiimba siku ya uzinduzi wa kwaya
+                    hiyo <br> tarehe 9/9/2018
                   </div>
 
                   <!-- LAYER NR. 4 -->
@@ -263,18 +265,18 @@
                 <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic10.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 3"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic10.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-3-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['-30','-100']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-3-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['-30','-100']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -284,10 +286,11 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-3-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['90','35','10']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-3-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['90','35','10']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -295,10 +298,10 @@
                     data-splitout="none" data-responsive_offset="on"
                     style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; border-radius: 3px">
                     Katibu wa Umoja wa Wanaume KKKT Usharika wa Kitunda<br> Relini
-                     Mzee Bernard Sepetu akiwatambulisha wataalamu wa<br> Sheria siku
-                      ya utoaji wa ushauri wa Kisheria na haki uliofanyika<br> Usharika
-                       wa Kitunda Relini tarehe 15/09/2019 kama sehemu<br> ya maadhimisho ya 
-                       sherehe za kutimiza mwaka Umoja tangu<br> kuanzishwa kwa Umoja wa Wanaume KKKT Kitunda Relini
+                    Mzee Bernard Sepetu akiwatambulisha wataalamu wa<br> Sheria siku
+                    ya utoaji wa ushauri wa Kisheria na haki uliofanyika<br> Usharika
+                    wa Kitunda Relini tarehe 15/09/2019 kama sehemu<br> ya maadhimisho ya
+                    sherehe za kutimiza mwaka Umoja tangu<br> kuanzishwa kwa Umoja wa Wanaume KKKT Kitunda Relini
                   </div>
 
                   <!-- LAYER NR. 4 -->
@@ -319,18 +322,18 @@
                 <li data-index="rs-4" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic4.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 4"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic4.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-3-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['0','-80']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-3-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['0','-80']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -340,10 +343,11 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-4-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['90','35','10']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-4-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['90','35','10']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -351,8 +355,8 @@
                     data-splitout="none" data-responsive_offset="on"
                     style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; border-radius: 3px">
                     Mchungaji akihubiri KKKT Usharika wa Kitunda Relini <br>
-                     tarehe 15/09/2019 siku ya utoaji wa huduma za<br>
-                      kisheria na haki kama sehemu ya mfululizo<br> wa maadhimisho ya Siku ya Wanaume Kitunda Relini
+                    tarehe 15/09/2019 siku ya utoaji wa huduma za<br>
+                    kisheria na haki kama sehemu ya mfululizo<br> wa maadhimisho ya Siku ya Wanaume Kitunda Relini
                   </div>
 
                   <!-- LAYER NR. 4 -->
@@ -373,18 +377,18 @@
                 <li data-index="rs-5" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic9.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 5"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic9.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-5-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['100','-50','0']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-5-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['100','-50','0']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -394,10 +398,11 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-5-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['155','35','60']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-5-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['155','35','60']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -426,18 +431,18 @@
                 <li data-index="rs-6" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                   data-easein="default" data-easeout="default" data-masterspeed="default"
                   data-thumb="images/photos/pic5.JPG" data-rotate="0" data-saveperformance="off" data-title="Slide 6"
-                  data-description="" >
+                  data-description="">
                   <!-- MAIN IMAGE -->
                   <img src="images/photos/pic5.JPG" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina >
+                    data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 2 -->
                   <div
                     class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-primary-transparent pl-10 pr-10"
-                    id="rs-6-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']" data-voffset="['100','-50','0']"
-                    data-fontsize="['35']" data-lineheight="['54']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                    id="rs-6-layer-2" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['100','-50','0']" data-fontsize="['35']" data-lineheight="['54']" data-width="none"
+                    data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -447,10 +452,11 @@
                   </div>
 
                   <!-- LAYER NR. 3 -->
-                  <div class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10" id="rs-6-layer-3" data-x="['left']"
-                    data-hoffset="['35']" data-y="['middle']" data-voffset="['155','35','60']"
-                    data-fontsize="['20','18',24']" data-lineheight="['28']" data-width="none" data-height="none"
-                    data-whitespace="nowrap" data-transform_idle="o:1;s:500"
+                  <div
+                    class="tp-caption tp-resizeme text-white bg-dark-transparent-6 text-white font-raleway pl-10 pr-10"
+                    id="rs-6-layer-3" data-x="['left']" data-hoffset="['35']" data-y="['middle']"
+                    data-voffset="['155','35','60']" data-fontsize="['20','18',24']" data-lineheight="['28']"
+                    data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;s:500"
                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
@@ -586,22 +592,20 @@
                 <div class="row">
                   <div class="col-md-12 col-sm-12 pl-0">
                     <div class="img-hover-border mt-sm-40">
-                      <img class="pull-right" src="images/logo.png" alt="bland_logo" width="200">
+                      <img class="pull-right hidden-sm hidden-xs" src="images/logo.png" alt="bland_logo" width="200">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-9">
                 <div class="about-details">
-                  <h2 class="text-primary mt-0 about_us_title" style="font-family:'SamsungSharpSans-Bold'">WHO ARE
-                    WE...?</h2>
+                  <h2 class="text-primary mt-0 about_us_title" style="font-family:'SamsungSharpSans-Bold'"></h2>
                   <p class="about_us_paragraph" style="font-family:'Open Sans'; font-size:17px">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, veniam culpa! Omnis eligendi
-                    veniam est placeat excepturi repudiandae suscipit perferendis, veritatis, perspiciatis fugiat
-                    distinctio, sapiente possimus dicta debitis corporis illo!
+
                   </p>
-                  <a href="#team" class="btn btn-flat btn-colored btn-default btn-border-primary btn-rounded mt-15">
-                    Contact Us
+                  <a href="#team"
+                    class="btn btn-flat btn-colored btn-default btn-border-primary btn-rounded mt-15 contact_us">
+
                   </a>
                 </div>
               </div>
@@ -610,27 +614,14 @@
             <div class="row mt-15">
               <div class="col-md-12" style="margin-top:50px">
                 <h3 class="line-bottom text-primary about_us_purpose_title" style="font-family:'SamsungSharpSans-Bold'">
-                  Our Purpose</h3>
+                </h3>
 
                 <p class="about_us_purpose_paragraph" style="font-family: 'Open Sans';font-size:16px">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos magni ex ratione
-                  deleniti nemo numquam quam. Laudantium voluptatum itaque, placeat facilis molestiae
-                  tempore distinctio ab in inventore vero qui!
+
                 </p>
               </div>
             </div>
 
-            <!--div class="row mt-15">
-              <div class="col-md-12">
-                <h3 class="line-bottom text-primary about_us_mission_title" style="font-family:'SamsungSharpSans-Bold'">Our Mission</h3>
-
-                <p class="about_us_mission_paragraph" >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos magni ex ratione
-                  deleniti nemo numquam quam. Laudantium voluptatum itaque, placeat facilis molestiae
-                  tempore distinctio ab in inventore vero qui!
-                </p>
-              </div>
-            </div-->
 
           </div>
         </div>
@@ -643,22 +634,9 @@
             <div class="row">
               <div class="col-md-12 pb-sm-20">
                 <h3 class="line-bottom mt-0 about_us_mission_title text-primary"
-                  style="font-family:'SamsungSharpSans-Bold'">Our Mission</h3>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="icon-box left media bg-silver-light border-1px btn-border-primary p-15 mb-20"
-                      style="border-radius: 10px">
-                      <!--a class="media-left pull-left flip" href="#">
-                        <i class="flaticon-charity-shaking-hands-inside-a-heart text-theme-colored"></i>
-                      </a-->
-                      <div class="media-body">
-                        <p style="font-family: 'Open Sans';font-size:16px">Lorem ipsum dolor sit ametcons ecte
-                          adipisicing eli cumconse teturs lorem ipsum dolor is
-                          emmit
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  style="font-family:'SamsungSharpSans-Bold'"></h3>
+                <div class="row about_us_mission_paragraph">
+
                 </div>
               </div>
             </div>
@@ -699,20 +677,19 @@
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
                 <h2 class="text-uppercase line-bottom-center mt-0 text-primary section_team_title"
-                  style="font-family:'SamsungSharpSans-Bold'">Our team</span></h2>
+                  style="font-family:'SamsungSharpSans-Bold'"></span></h2>
                 <div class="title-icon">
                   <img src="images/team.svg" alt="team" style="width: 50px ">
                 </div>
-                <p class="section_team_paragraph" style="font-family: 'Open Sans'; font-size:16px">Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem
-                  voluptatem obcaecati</p>
+                <p class="section_team_paragraph" style="font-family: 'Open Sans'; font-size:16px">
+                </p>
               </div>
             </div>
           </div>
           <div class="section-content">
             <div class="row multi-row-clearfix">
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -721,9 +698,10 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr. Stevens Mlimbila
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
-                      <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Chairman
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
+                      <div class="mt-0 mb-0 ">
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="chair_man_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 715 629 632
@@ -734,7 +712,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -743,9 +721,10 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Eng.Dickson Mmbando
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Deputy Chairman
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="dep_I_chair_man_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i> +255 714 537 423
@@ -756,7 +735,31 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
+                <div class="team-member clearfix">
+                  <div class="team-thumb">
+                    <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
+                  </div>
+                  <div class="team-info-div  b-r-6">
+                    <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
+                      Mr. Gideon Mafie
+                    </h4>
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
+                      <div class="mt-0 mb-0">
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="dep_II_chair_man_title"></span>
+                      </div>
+                      <div class="mt-0 mb-0">
+                        <i class="fa fa-phone text-white mr-5"></i> +255 714 537 423
+                      </div>
+
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -765,9 +768,11 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr. Bernard A. Sepetu
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Secretary
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="secre_title"></span>
+
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 713 307 169
@@ -778,7 +783,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -787,9 +792,11 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Advocate A. Semu
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Deputy Secretary
+                        <i class="fa fa-user text-white mr-5"></i>
+
+                        <span class="dep_secre_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 658 605 805
@@ -800,7 +807,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -809,9 +816,10 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr.Richard Somi
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Treasurer
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="treasure_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 754 649 562
@@ -822,7 +830,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -831,9 +839,11 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr. Godfrey John
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Deputy Treasurer
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="dep_treasure_title"></span>
+
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 713 068 757
@@ -844,7 +854,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -853,9 +863,10 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr. John Lemomo
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Group Counselors
+                        <i class="fa fa-user text-white mr-5"></i>
+                        <span class="grup_cons_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 784 208 622
@@ -866,7 +877,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -875,9 +886,9 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Mr.Tumaini Wilfred
                       </h5>
-                      <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                      <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                         <div class="mt-0 mb-0">
-                          <i class="fa fa-user text-white mr-5"></i> Group Counselors
+                          <i class="fa fa-user text-white mr-5"></i> <span class="grup_cons_title"></span>
                         </div>
                         <div class="mt-0 mb-0">
                           <i class="fa fa-phone text-white mr-5"></i>+255 713 215 466
@@ -888,7 +899,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -897,9 +908,9 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Dr. Godfrey Justo
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Group Counselors
+                        <i class="fa fa-user text-white mr-5"></i> <span class="grup_cons_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 767 298 710
@@ -910,7 +921,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-6 col-sm-6 col-md-3 mb-15">
+              <div class="col-xs-12 col-sm-6 col-md-3 mb-15">
                 <div class="team-member clearfix">
                   <div class="team-thumb">
                     <img alt="" src="images/team/user.png" class="img-fullwidth b-r-6">
@@ -919,9 +930,9 @@
                     <h4 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       Dr.Rweyemamu
                     </h4>
-                    <h5 class="mt-0 text-white text-left" style="font-family:'Open Sans'">
+                    <h5 class="mt-0 mb-0 text-white text-left" style="font-family:'Open Sans'">
                       <div class="mt-0 mb-0">
-                        <i class="fa fa-user text-white mr-5"></i> Group Counselors
+                        <i class="fa fa-user text-white mr-5"></i> <span class="grup_cons_title"></span>
                       </div>
                       <div class="mt-0 mb-0">
                         <i class="fa fa-phone text-white mr-5"></i>+255 787 941 606
@@ -937,8 +948,6 @@
         </div>
       </section>
 
-
-
       <!-- Section: Achievements -->
       <section class="divider parallax layer-overlay overlay-dark-8" data-background-ratio="0.5"
         data-bg-img="images/photos/pic1.JPG">
@@ -953,21 +962,7 @@
                   <i class="fa fa-check-circle font-36 mt-10 text-success"></i>
                 </div>
               </div>
-              <div class="owl-carousel-1col" data-dots="true">
-
-                <div class="item">
-                  <div class="testimonial-wrapper text-center">
-                    <div class="content pt-10">
-                      <p class="font-15 text-white section_achieve_paragraph">
-                        <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est quasi, quas ipsam,
-                          expedita placeat facilis odio illo ex accusantium eaque itaque officiis et sit. Vero quo,
-                          impedit neque.
-                        </em>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
+              <div class="owl-carousel-1col section_achieve_paragraph" data-dots="true">
               </div>
             </div>
           </div>
@@ -1145,6 +1140,7 @@
         </div>
       </section>
 
+
     </div>
     <!-- end main-content -->
 
@@ -1153,16 +1149,16 @@
       <div class="container pt-70 pb-40">
         <div class="row border-bottom-black">
           <div class="col-md-1 hidden-xs hidden-sm">
-            <img src="images/Artboard 1.png" alt="" style="width:80%; position: relative; float: right;">
+            <img src="images/logo.png" alt="" style="width:100%; position: relative; float: right;">
           </div>
           <div class="col-md-11">
             <div class="widget dark">
-              <a href="#">
+              <a>
                 <span class="bland_title">
-                  WANAUME KATIKA KRISTO
+
                 </span>
                 KKKT-DMP KITUNDA RELINI
-              </a> P.O.Box 12164
+              </a>
               <!-- <img class="mt-10 mb-20" alt="" src="images/"> -->
               <ul class="list-inline mt-5">
                 <li class="m-0 pl-10 pr-10">
@@ -1195,13 +1191,13 @@
                 <script>
                   document.write(new Date().getFullYear())
                 </script>
-                <a href="#" class="text-white">NgomeCloud</a> . All Rights Reserved</p>
+                <a href="http://ngomecloud.com" class="text-white">NgomeCloud</a>. All Rights Reserved</p>
             </div>
             <div class="col-md-6 text-right">
               <div class="widget no-border m-0">
                 <ul class="list-inline sm-text-center mt-5 font-12">
                   <li>
-                    <button class="btn_lang active">
+                    <button class="btn_lang active" onclick="change_lang(0)">
                       <img src="images/eng.svg" alt="English" style="width: 20px">
                       &nbsp;
                       English
@@ -1209,7 +1205,7 @@
                   </li>
                   <li>|</li>
                   <li>
-                    <button class="btn_lang">
+                    <button class="btn_lang" onclick="change_lang(1)">
                       <img src="images/kis.svg" alt="Kiswahili" style="width: 20px">
                       &nbsp;
                       Kiswahili
@@ -1227,6 +1223,7 @@
 
   <!-- Footer Scripts -->
   <!-- JS | Custom script for all pages -->
+  //
   <script src="js/custom.js"></script>
 
   <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  

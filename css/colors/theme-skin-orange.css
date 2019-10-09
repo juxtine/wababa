@@ -289,7 +289,7 @@ COLOR CODE: #F26522
   background-color: #F26522;
 }
 .preloader-dot-loading .cssload-loading i {
-  background: #F26522 !important;
+  background: #337ab7 !important;
 }
 /*
  * background: theme-color
@@ -422,7 +422,7 @@ ul.list.theme-colored.check li:before,
 }
 .border-theme-colored,
 .owl-theme .owl-dots .owl-dot span {
-  border-color: #F26522;
+  border-color: #337ab7;
 }
 .icon-box.box-style1.practice-style3:hover .icon-wrapper::after {
   border-color: #F26522 transparent transparent;

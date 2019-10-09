@@ -88,8 +88,9 @@ button.btn_lang.active{
     filter: blur(1px)
 }
 .bland_logos img{
-    width: 100px
+    width: 100px;
 }
+.
 /* MEDIA QUERIES */
 @media (min-width: 765px){
     section#home{
@@ -105,7 +106,7 @@ button.btn_lang.active{
 
 }
 
-@media(max-width:700px){
+@media(max-width:769px){
     .bland_title_main{
         font-size:15px !important
     }
@@ -115,6 +116,10 @@ button.btn_lang.active{
     .bland_logos img{
         max-width: 50px !important;
         margin: 20px 0;
+    }
+    section#about .container .about-details{
+        margin-top: -100px;
+    
     }
 }
 
