@@ -388,7 +388,7 @@ ul.list.theme-colored.check li:before,
 .donation-form .form-group label,
 .title-icon [class^="flaticon-"]::after,
 .title-icon [class^="flaticon-"]::before {
-  color: #F26522;
+  color: #337ab7;
 }
 .star-rating span::before {
   color: #F26522 !important;

@@ -227,23 +227,22 @@ change_lang = lang => {
         });
         $('.section_achieve_paragraph').html(container_achieve_paragraph.join(''));
         $('.section_plans_title').html(eng_data.section_plans_title);
-        // eng_data.container_plans_paragraph.map(item => {
-        //     container_plans_paragraph.push(`
-
-        //     <div class="item">
-        //     <div class="testimonial-wrapper text-center">
-        //       <div class="content pt-10">
-        //         <p class="font-15 text-white ">
-        //           <em>
-        //           `+ item + `
-        //           </em>
-        //         </p>
-        //       </div>
-        //     </div>
-        //   </div>
-        //     `)
-        // });
-        // $('.container_plans_paragraph').html(container_plans_paragraph.join(''));
+        eng_data.section_plans_paragraph.map((item,index) => {
+            container_plans_paragraph.push(`
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="icon-box left media bg-silver-light border-1px btn-border-primary p-15 mb-20"
+            style="border-radius: 10px">
+            <div class="media-body">
+              <p class="" style="font-family: 'Open Sans';font-size:16px">
+              <span style="font-weight:600; font-size:20px">`+ (index+1) +`:</span>
+                `+ item + `
+              </p>
+            </div>
+            </div>
+            </div>
+            `)
+        });
+        $('.section_plans_paragraph').html(container_plans_paragraph.join(''));
         $('.section_gallery_paragraph').html(eng_data.section_gallery_paragraph);
 
         console.log('english was selected');
@@ -307,23 +306,22 @@ change_lang = lang => {
         });
         $('.section_achieve_paragraph').html(container_achieve_paragraph.join(''));
         $('.section_plans_title').html(eng_data.section_plans_title);
-        // eng_data.container_plans_paragraph.map(item => {
-        //     container_plans_paragraph.push(`
-
-        //     <div class="item">
-        //     <div class="testimonial-wrapper text-center">
-        //       <div class="content pt-10">
-        //         <p class="font-15 text-white ">
-        //           <em>
-        //           `+ item + `
-        //           </em>
-        //         </p>
-        //       </div>
-        //     </div>
-        //   </div>
-        //     `)
-        // });
-        // $('.container_plans_paragraph').html(container_plans_paragraph.join(''));
+        eng_data.section_plans_paragraph.map((item,index) => {
+            container_plans_paragraph.push(`
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="icon-box left media bg-silver-light border-1px btn-border-primary p-15 mb-20"
+            style="border-radius: 10px">
+            <div class="media-body">
+              <p class="" style="font-family: 'Open Sans';font-size:16px">
+              <span style="font-weight:600; font-size:20px">`+ (index+1) +`:</span>
+                `+ item + `
+              </p>
+            </div>
+            </div>
+            </div>
+            `)
+        });
+        $('.section_plans_paragraph').html(container_plans_paragraph.join(''));
         $('.section_gallery_paragraph').html(eng_data.section_gallery_paragraph);
 
         $('#system_title').html(eng_data.system_title);
